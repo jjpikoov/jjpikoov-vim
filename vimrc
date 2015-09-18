@@ -130,11 +130,16 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_python_checkers = ['flake8']
+let g:syntastic_loc_list_height=5
+let g:syntastic_quiet_messages = { "type": "style" }
 
-"POWERLINE
-let g:Powerline_symbols = 'fancy'
+"AIRLINE
+let g:airline#extensions#tabline#enabled = 0
+let g:airline_powerline_fonts = 1
 
 "JEDI
 let g:jedi#popup_select_first = 1
-let g:jedi#force_py_version = 3
+"let g:jedi#force_py_version = 3
+let g:jedi#auto_initialization = 1
+
 
