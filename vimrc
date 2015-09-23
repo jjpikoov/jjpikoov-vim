@@ -1,11 +1,14 @@
 syntax on
 set smartindent
+set autoindent
 
 
 set shiftwidth=4
-set tabstop=4
+set tabstop=8
 set expandtab
 set smarttab
+set softtabstop=4
+set cindent
 
 set scrolloff=999
 
@@ -140,7 +143,6 @@ let g:airline_powerline_fonts = 1
 
 "JEDI
 let g:jedi#popup_select_first = 1
+"First compile vim with python 3 flag :)
 "let g:jedi#force_py_version = 3
 let g:jedi#auto_initialization = 1
-
-
