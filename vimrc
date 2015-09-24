@@ -53,14 +53,15 @@ nmap <space> i<space><Esc>l
 nmap <enter> i<enter><Esc><o><esc><l>
 
 "NEXT / PREVIOUS BUFFER / DELETE BUFFER
-nmap . :bn<enter>
-nmap ,  :bp<enter>
+nmap { :bn<enter>
+nmap }  :bn<enter>
 nmap qq :bd<enter>
 nmap `` :q<enter>
 nmap zz :w<enter>
 imap zz <esc>:w<enter>
 " TO LIST ALL BUFFERS AND CHOOSE ONE OF THEM
 :nnoremap <F5> :buffers<CR>:buffer<Space>
+:nnoremap <F4> :buffers<CR>:bd<Space>
 
 "RESIZING WINDOWS
 nmap <Up> :res +5<enter>
@@ -135,7 +136,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_python_checkers = ['flake8']
 let g:syntastic_loc_list_height=5
-let g:syntastic_quiet_messages = { "type": "style" }
+"let g:syntastic_quiet_messages = { "type": "style" }
 
 "AIRLINE
 let g:airline#extensions#tabline#enabled = 1
@@ -146,3 +147,6 @@ let g:jedi#popup_select_first = 1
 "First compile vim with python 3 flag :)
 "let g:jedi#force_py_version = 3
 let g:jedi#auto_initialization = 1
+
+"CHAPA
+let g:chapa_default_mappings = 1
