@@ -53,21 +53,24 @@ nmap <space> i<space><Esc>l
 nmap <enter> i<enter><Esc><o><esc><l>
 
 "NEXT / PREVIOUS BUFFER / DELETE BUFFER
-nmap { :bn<enter>
+nmap { :bp<enter>
 nmap }  :bn<enter>
-nmap qq :bd<enter>
+nmap qq :Bdelete<enter>
 nmap `` :q<enter>
 nmap zz :w<enter>
 imap zz <esc>:w<enter>
 " TO LIST ALL BUFFERS AND CHOOSE ONE OF THEM
 :nnoremap <F5> :buffers<CR>:buffer<Space>
-:nnoremap <F4> :buffers<CR>:bd<Space>
+:nnoremap <F4> :buffers<CR>:Bdelete<Space>
 
 "RESIZING WINDOWS
 nmap <Up> :res +5<enter>
 nmap <Down> :res -5<enter>
 nmap <Right> :vertical resize +5<enter>
 nmap <Left> :vertical resize -5<enter>
+
+"Git stuff
+nmap gS :Gstatus<CR>
 
 """""""""""""""""""""""
 """""""" FONTS """"""""
