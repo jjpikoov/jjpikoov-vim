@@ -40,3 +40,6 @@
 [submodule "bundle/vim-bbye"]
 	path = bundle/vim-bbye
 	url = https://github.com/moll/vim-bbye.git
+[submodule "bundle/delimitMate"]
+	path = bundle/delimitMate
+	url = https://github.com/Raimondi/delimitMate.git

@@ -2,6 +2,8 @@ syntax on
 set smartindent
 set autoindent
 
+set hidden
+
 
 set shiftwidth=4
 set tabstop=8
@@ -45,6 +47,7 @@ imap <C-e> <esc>:exec "normal $"<enter>a
 imap <C-a> <esc>:exec "normal 0"<enter>i
 imap <C-d> <esc>xi
 inoremap <C-Space> <C-x><C-o>
+nmap qs :%s/
 
 "Spacebar in NORMAL mode
 nmap <space> i<space><Esc>l
@@ -71,6 +74,10 @@ nmap <Left> :vertical resize -5<enter>
 
 "Git stuff
 nmap gS :Gstatus<CR>
+nmap gC :Gcommit<CR>
+nmap gD :Gdiff
+nmap gP :Gpush<CR>
+
 
 """""""""""""""""""""""
 """""""" FONTS """"""""
@@ -105,6 +112,7 @@ set statusline+=%<%P
 set incsearch
 set ignorecase
 set hlsearch "check if its fucking highlight after my search
+map qn :noh<CR>
 
 
 """""""""""""""""""""""
@@ -123,6 +131,7 @@ let g:rehash256 = 1
 map <F6> :NERDTreeToggle<cr>r<esc>
 imap <F6> <esc>:NERDTreeToggle<cr>ri
 let g:NERDTreeWinPos = "left"
+let NERDTreeIgnore = ['\.pyc$']
 
 "TAGBAR
 map <F7> :Tagbar<cr>r<esc>
