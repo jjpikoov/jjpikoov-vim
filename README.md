@@ -5,6 +5,8 @@ My vim config file and usefull plugins.
 <h6>Airline</h6>
 Remember to add some font for Airline plugin: https://github.com/powerline/fonts<br>
 Tutorial: http://powerline.readthedocs.org/en/latest/installation/linux.html
+To use Tagbar remember about ctags.
+You have to 'pip install jedi' as well.
 
 <h5>To install on another machine:</h5>
 ```bash
