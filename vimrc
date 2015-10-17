@@ -148,6 +148,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_python_checkers = ['flake8']
 let g:syntastic_loc_list_height=5
+let g:syntastic_java_checkers = ['javac']
 "let g:syntastic_quiet_messages = { "type": "style" }
 
 "AIRLINE
