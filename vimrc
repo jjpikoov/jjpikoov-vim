@@ -78,6 +78,9 @@ nmap gC :Gcommit<CR>
 nmap gD :Gdiff
 nmap gP :Gpush<CR>
 
+"Colorscheme change
+command Pencil :colorscheme pencil | set background=light
+
 
 """""""""""""""""""""""
 """""""" FONTS """"""""
