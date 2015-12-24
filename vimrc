@@ -126,9 +126,12 @@ filetype plugin on
 "PATHOGEN
 execute pathogen#infect()
 
-"SCHEME
-colors molokai
-let g:rehash256 = 1
+"SCHEME [!!!] Comment them all when commiting [!!!]
+" colors molokai
+" let g:rehash256 = 1
+" 
+" colorscheme pencil 
+" set background=light
 
 "NERDTREE
 map <F6> :NERDTreeToggle<cr>r<esc>
