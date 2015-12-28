@@ -46,6 +46,7 @@ imap <C-g> <esc>:exec "normal b"<enter>i
 imap <C-e> <esc>:exec "normal $"<enter>a
 imap <C-a> <esc>:exec "normal 0"<enter>i
 imap <C-d> <esc>xi
+imap <C-v> <esc>F<i
 inoremap <C-Space> <C-x><C-o>
 nmap qs :%s/
 
@@ -175,3 +176,5 @@ let g:chapa_default_mappings = 1
 let g:indentLine_color_term = 239
 let g:indentLine_color_gui = '#09AA08'
 let g:indentLine_char = '│'
+
+
