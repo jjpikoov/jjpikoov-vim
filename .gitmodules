@@ -52,6 +52,3 @@
 [submodule "bundle/Vim-Jinja2-Syntax"]
 	path = bundle/Vim-Jinja2-Syntax
 	url = https://github.com/Glench/Vim-Jinja2-Syntax.git
-[submodule "bundle/HTML-AutoCloseTag"]
-	path = bundle/HTML-AutoCloseTag
-	url = https://github.com/vim-scripts/HTML-AutoCloseTag.git
