@@ -47,7 +47,7 @@ imap <C-e> <esc>:exec "normal $"<enter>a
 imap <C-a> <esc>:exec "normal 0"<enter>i
 imap <C-d> <esc>lxi
 imap <C-o> <esc>O<C-t>
-imap <C-v> </<C-X><C-O><esc>xF<i
+imap <C-v> ></<C-X><C-O><esc>xF<i
 inoremap <C-Space> <C-x><C-o>
 nmap qs :%s/
 
@@ -178,4 +178,7 @@ let g:indentLine_color_term = 239
 let g:indentLine_color_gui = '#09AA08'
 let g:indentLine_char = '│'
 
-
+"UltiSnips
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-c>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"

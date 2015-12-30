@@ -43,3 +43,6 @@
 [submodule "bundle/Vim-Jinja2-Syntax"]
 	path = bundle/Vim-Jinja2-Syntax
 	url = https://github.com/Glench/Vim-Jinja2-Syntax.git
+[submodule "bundle/ultisnips"]
+	path = bundle/ultisnips
+	url = https://github.com/SirVer/ultisnips.git
