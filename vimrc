@@ -45,8 +45,9 @@ imap <C-h> <esc>:exec "normal e"<enter>a
 imap <C-g> <esc>:exec "normal b"<enter>i
 imap <C-e> <esc>:exec "normal $"<enter>a
 imap <C-a> <esc>:exec "normal 0"<enter>i
-imap <C-d> <esc>xi
-imap <C-v> <esc>F<i
+imap <C-d> <esc>lxi
+imap <C-o> <esc>O<C-t>
+imap <C-v> </<C-X><C-O><esc>xF<i
 inoremap <C-Space> <C-x><C-o>
 nmap qs :%s/
 
