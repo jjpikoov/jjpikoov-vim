@@ -39,6 +39,10 @@ set termencoding=utf-8
 """"""""""""""""""""""""
 """"""   BINDS   """""""
 """""""""""""""""""""""
+inoremap <C-Space> <C-x><C-o>
+let mapleader=","
+
+"Moving in insert mode
 imap <C-k> <esc>:exec "normal l"<enter>a
 imap <C-j> <esc>:exec "normal h"<enter>a
 imap <C-h> <esc>:exec "normal e"<enter>a
@@ -47,9 +51,12 @@ imap <C-e> <esc>:exec "normal $"<enter>a
 imap <C-a> <esc>:exec "normal 0"<enter>i
 imap <C-d> <esc>lxi
 imap <C-o> <esc>O<C-t>
+
+"Insert closing tag (html) and go back (>|<)
 imap <C-v> ></<C-X><C-O><esc>xF<i
-inoremap <C-Space> <C-x><C-o>
-nmap qs :%s/
+
+"Global substitute
+nmap qs :%s/current/after/gc
 
 "Spacebar in NORMAL mode
 nmap <space> i<space><Esc>l
@@ -64,6 +71,7 @@ nmap qq :Bdelete<enter>
 nmap `` :q<enter>
 nmap zz :w<enter>
 imap zz <esc>:w<enter>
+
 " TO LIST ALL BUFFERS AND CHOOSE ONE OF THEM
 :nnoremap <F5> :buffers<CR>:buffer<Space>
 :nnoremap <F4> :buffers<CR>:Bdelete<Space>
@@ -79,10 +87,6 @@ nmap gS :Gstatus<CR>
 nmap gC :Gcommit<CR>
 nmap gD :Gdiff
 nmap gP :Gpush<CR>
-
-"Colorscheme change
-command Pencil :colorscheme pencil | set background=light
-
 
 """""""""""""""""""""""
 """""""" FONTS """"""""
@@ -178,7 +182,7 @@ let g:indentLine_color_term = 239
 let g:indentLine_color_gui = '#09AA08'
 let g:indentLine_char = '│'
 
-"UltiSnips
+"ULTISNIPS
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-c>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
