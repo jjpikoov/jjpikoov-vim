@@ -53,7 +53,7 @@ imap <C-d> <esc>lxi
 imap <C-o> <esc>O<C-t>
 
 "Insert closing tag (html) and go back (>|<)
-imap <C-v> ></<C-X><C-O><esc>xF<i
+imap <C-z> ></<C-X><C-O><esc>xF<i
 
 "Global substitute
 nmap qs :%s/current/after/gc
@@ -184,5 +184,5 @@ let g:indentLine_char = '│'
 
 "ULTISNIPS
 let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-c>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsJumpForwardTrigger="<C-m>"
+let g:UltiSnipsJumpBackwardTrigger="<C-v>"
