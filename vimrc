@@ -133,9 +133,9 @@ filetype plugin on
 execute pathogen#infect()
 
 "SCHEME [!!!] Comment them all when commiting [!!!]
-" colors molokai
-" let g:rehash256 = 1
-" 
+colors molokai
+let g:rehash256 = 1
+ 
 " colorscheme pencil 
 " set background=light
 
