@@ -13,9 +13,8 @@ Also 'pip install flake8' will be necessary.<br>
 
 <h5>To install on another machine:</h5>
 ```bash
-cd ~
-git clone https://github.com/jjpikoov/jjpikoov-vim
-mv jjpikoov-vim ~/.vim
+cd ~/
+git clone https://github.com/jjpikoov/jjpikoov-vim .vim
 cd ~/.vim
 git submodule init
 git submodule update
