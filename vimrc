@@ -24,6 +24,8 @@ set visualbell
 
 set confirm
 
+au FileType jinja setl sw=2 sts=2 et
+
 "Terminal color (gnome)
 if $COLORTERM == 'gnome-terminal'
   set t_Co=256
