@@ -54,6 +54,9 @@ imap <C-a> <esc>:exec "normal 0"<enter>i
 imap <C-d> <esc>lxi
 imap <C-o> <esc>O<C-t>
 
+"Repair tags (Ultisnip problem <foo> <foo2> to work)
+map rr :%s/>\s/>/g<enter>
+
 "Insert closing tag (html) and go back (>|<)
 imap <C-z> ></<C-X><C-O><esc>xF<i
 
