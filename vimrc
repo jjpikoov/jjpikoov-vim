@@ -78,8 +78,8 @@ nmap zz :w<enter>
 imap zz <esc>:w<enter>
 
 " TO LIST ALL BUFFERS AND CHOOSE ONE OF THEM
-:nnoremap <F5> :buffers<CR>:buffer<Space>
-:nnoremap <F4> :buffers<CR>:Bdelete<Space>
+:nnoremap <F4> :buffers<CR>:buffer<Space>
+:nnoremap <F5> :buffers<CR>:Bdelete<Space>
 
 "RESIZING WINDOWS
 nmap <Up> :res +5<enter>
